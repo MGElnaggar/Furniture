@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Furniture
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+**Furniture** is an online shopping platform dedicated to providing customers with a variety of home essentials. This site allows users to easily browse, select, and purchase furniture and home decor items. It offers a seamless shopping experience from product selection to checkout, making it a one-stop solution for all your home furnishing needs.
 
-## Available Scripts
+## Features
+- User-friendly navigation
+- Detailed product listings
+- Shopping cart functionality
+- Secure checkout process
+- Temporary data storage in local storage for cart management
 
-In the project directory, you can run:
+## Page Descriptions
 
-### `npm start`
+### Home Page
+The **Home Page** serves as the landing page for users. It highlights featured products, provides reasons to choose our store, showcases customer testimonials, and presents snippets of blog posts related to home decor and furniture tips. Users can easily navigate to other sections of the site from here.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Shop Page
+The **Shop Page** displays a comprehensive list of all available products. Users can view detailed information about each item, including images, descriptions, and prices. From this page, customers can add products directly to their cart for purchase.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### About Us Page
+The **About Us Page** provides insights into our company's mission, values, and the team behind the brand. This section helps build trust with customers by sharing our story and commitment to quality service.
 
-### `npm test`
+### Services Page
+The **Services Page** outlines the various services we offer, including delivery options and customer support. It helps users understand how we can assist them beyond just selling products.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Posts Page
+The **Posts Page** features a collection of articles and blog posts related to furniture trends, tips for home decoration, and lifestyle advice. This content engages users and adds value to their shopping experience.
 
-### `npm run build`
+### Contact Us Page
+The **Contact Us Page** provides a form for users to reach out with inquiries, feedback, or support requests. This allows customers to easily connect with us for assistance.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Cart Page
+The **Cart Page** summarizes all the items added by the user. Customers can adjust quantities, remove items, and view the total cost, including any applicable discounts. This page serves as a crucial step before proceeding to checkout.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Checkout Page
+The **Checkout Page** is where users finalize their orders. Customers must enter their shipping information, including:
+- Country
+- First Name
+- Last Name
+- Address
+- State
+- Postal/Zip Code
+- Email
+- Phone Number
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+A final review of the order's details and total price is provided before submission.
 
-### `npm run eject`
+### Order Submitted Page
+Once the order is successfully placed, users are directed to the **Order Submitted Page**. This page confirms the order submission and provides an option to view the order details. Users can toggle the visibility of their order information. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Flow of Ordering
+1. **Select Products**: Users browse the Shop Page and add items to their cart.
+2. **View Cart**: Users can navigate to the Cart Page to review their selected items, adjust quantities, or remove items.
+3. **Proceed to Checkout**: Once satisfied with their cart, users click to proceed to the Checkout Page, where they enter their shipping information.
+4. **Final Review**: After entering all required information, users can review their order before clicking to place the order.
+5. **Order Confirmation**: Upon successful submission, users are redirected to the Order Submitted Page, where they can view their order summary.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Local Storage Usage
+All cart and order data is temporarily stored in the browser's local storage. This allows users to navigate away from the site without losing their selections. However, when users click on the "Back to Home" button on the Order Submitted Page, all data stored in local storage is cleared. This ensures that the next time users visit, they will start with a fresh cart.
