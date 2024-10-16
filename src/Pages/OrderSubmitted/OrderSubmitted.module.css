@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+
+.orderSubmitted{
+    background-color: #eff2f1;
+}
+
+.container{
+    padding: 4rem 0 8rem 0;
+    width: 78%;
+    margin: auto;
+    text-align: center;
+}
+
+.container img{
+    width: 100px;
+}
+
+.container h1{
+    color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-family: "Inter", sans-serif;
+}
+
+.container p{
+    margin-bottom: 3rem !important;
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-family: "Inter", sans-serif;
+    line-height: 28px;
+    color: #6a6a6a;
+}
+
+.dataContainer {
+    max-width: 700px;
+    margin: auto;
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.5s ease, height 0.5s ease; /* Smooth transition for height */
+    height: 0; /* Start with no height */
+    overflow: hidden; /* Hide overflow */
+}
+
+.dataContainer.visible {
+    opacity: 1; /* Make visible */
+    height: auto; /* Set to auto when visible */
+}
+.orderData{
+    margin-bottom: 4rem;
+}
+
+.orderData h1,
+.productList h3{
+    text-align: left;
+    color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-family: "Inter", sans-serif;
+}
+
+.orderData h1 strong{
+    font-weight: 600;
+}
+
+.productList ,
+.priceDetails{
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+.productList h2{
+    text-align: left;
+    color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-family: "Inter", sans-serif;
+}
+.productList h3{
+    font-weight: 600;
+}
+
+.productList p strong,
+.priceDetails p strong{
+    font-weight: 600;
+}
+
+.productList p,
+.priceDetails p{
+    margin-bottom: 0rem !important;
+}
+
+.priceDetails p strong{
+    color: black;
+}
+
+.container button{
+    margin-right: 20px;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: #2f2f2f;
+    border-color: #2f2f2f;
+    font-size: .875rem;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+}
+
+
+@media (max-width:1058px){
+    .container{
+        width: 92%;
+        margin: auto;
+    }
+}

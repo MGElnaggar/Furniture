@@ -1,0 +1,42 @@
+.posts{
+    background-color: #eff2f1;
+}
+
+.postsContainer{
+    padding: 6rem 0;
+    width: 78%;
+    margin: auto;
+}
+
+.postsBlogs{
+    flex: 1 1 74%;
+    box-sizing: border-box;
+    padding: 0px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    justify-items: center;
+}
+
+.testimonial{
+    margin-bottom: 100px;
+}
+
+@media (max-width:1058px){
+    .postsContainer{
+        width: 92%;
+        margin: auto;
+    }
+}
+
+@media (max-width:899px) {
+    .postsBlogs{
+        grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+    }
+}
+
+@media (max-width:513px) {
+    .postsBlogs{
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+}

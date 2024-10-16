@@ -1,0 +1,122 @@
+.contactUs {
+    background-color: #eff2f1;
+}
+
+.contactContainer {
+    width: 58%;
+    margin: auto;
+    padding: 100px 0;
+}
+
+.contactInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+.iconContainer {
+    background-color: #335d4a;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconContainer i {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.contactItem p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6a6a6a;
+    font-size: 14px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.formRowFirstName,
+.formRowLastName {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.formRow label{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
+    font-size: 14px;
+}
+
+.inputField {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.textArea {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    height: 150px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.submitButton {
+    padding: 12px 25px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.submitButton:hover {
+    background-color: #4d6f62;
+}
+
+@media (max-width: 1058px) {
+    .contactContainer {
+        width: 72%;
+    }
+}
+
+@media (max-width: 768px) {
+    .formRow {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

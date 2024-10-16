@@ -1,0 +1,100 @@
+.ourTeamSection {
+  width: 78%;
+  margin: auto;
+}
+
+.ourTeamSection h2{
+  text-align: center;
+  color: #2f2f2f;
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  margin-top: 0;
+  margin-bottom: 3.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.teamGrid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
+.teamMember {
+  width: 22%;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  /* padding: 20px; */
+  background-color: transparent;
+}
+
+.teamImage {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.teamMember h3 {
+  font-size: 1.75rem;
+  margin: 10px 0;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #2f2f2f;
+  font-family: "Inter", sans-serif;
+  text-decoration: underline;
+}
+
+.teamMember span {
+  margin-bottom: 1.5rem !important;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  color: #6a6a6a;
+  font-size: 14px;
+}
+
+.teamMember p {
+  margin-bottom: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  color: #6a6a6a;
+  font-size: 14px;
+}
+
+.learnMore {
+  display: inline-block;
+  margin-top: 15px;
+  color: #2f2f2f;
+  text-decoration: underline;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.learnMore:hover {
+  text-decoration: none;
+}
+
+
+
+@media (max-width:1058px){
+  .ourTeamSection{
+    width: 92%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .teamMember {
+    width: 48%;
+  }
+}
+
+@media (max-width: 600px) {
+  .teamMember {
+    width: 100%;
+  }
+}

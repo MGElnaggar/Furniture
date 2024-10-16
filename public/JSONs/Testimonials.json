@@ -1,0 +1,20 @@
+[
+    {
+        "text": " The product is incredibly intuitive and easy to use. It has streamlined our workflow and boosted productivity. I’m very satisfied with the results and would recommend it to anyone seeking efficiency in their business. ",
+        "name": "Maria Jones",
+        "title": "CEO, Co-Founder, XYZ Inc.",
+        "image": "/Assets/Person/person1.png"
+    },
+    {
+        "text": " We've seen a noticeable improvement in our team's performance since we started using this product. The interface is user-friendly, The support team is very responsive. It's been a game-changer for our business.",
+        "name": "John Doe",
+        "title": "CTO, ABC Corp.",
+        "image": "/Assets/Person/person2.jpg"
+    },
+    {
+        "text": " I love the simplicity and functionality of this product. It solved a lot of the challenges we were facing and has become an essential tool in our daily operations. Definitely exceeded my expectations, Thank you very much ",
+        "name": "Alice Smith",
+        "title": "Marketing Director, Example LLC",
+        "image": "/Assets/Person/person3.jpg"
+    }
+]

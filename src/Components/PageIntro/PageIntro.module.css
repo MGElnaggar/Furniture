@@ -1,0 +1,167 @@
+.pageIntro{
+    background-color: #3b5d50;
+}
+
+.intro{
+    padding: 4rem 0rem;
+}
+
+.container{
+    width: 78%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.introTexts{
+    flex: 1 1 40%;
+    box-sizing: border-box;
+    position: relative;
+    top: -29px;
+}
+
+.introTexts h1{
+    font-family: "Inter", sans-serif;   
+    font-weight: 700;
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+    width: 80%;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+.introTexts p{
+    font-family: "Inter", sans-serif;   
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 1.5rem;
+    line-height: 28px;
+    width: 90%;
+    animation: slideInLeft 1s ease-in-out forwards;
+    animation-delay: 1.1s;
+    opacity: 0;
+}
+
+.introTextsBtns button{
+    color: white;
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.3);;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 30px;
+    line-height: 1.5;
+    border: 2px solid rgba(255, 255, 255, 0.3);;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    margin: 10px 0px;
+    cursor: pointer;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 2.1s;
+    opacity: 0;
+}
+
+.introTextsBtns button:first-child{
+    color: #2f2f2f;
+    background: #f9bf29;
+    border-color: #f9bf29;
+    border: 1px solid transparent;
+    margin-right: 0.5rem;
+}
+
+.introTextsBtns button:hover{
+    border-color: white;
+    color: #ffffff;
+}
+
+.introTextsBtns button:first-child:hover{
+    background: #ca9100;
+    border-color: #ca9100;
+}
+
+.introPhotos{
+    flex: 1 1 60%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.introPhotos img{
+    width: 100%;
+    z-index: 3;
+}
+
+.introPhotos::after{
+    content: "";
+    position: absolute;
+    width: 255px;
+    height: 217px;
+    background-image: url(../../Assets/SVGs/dotsLight.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: -40px;
+    top: -30px;
+    z-index: 2;
+    visibility: visible;
+}
+
+
+/* Media Queries for responsiveness */
+
+@media (min-width: 899px) {
+    .introPhotos img{
+        position: relative;
+        left: 5rem;
+        width: 90%;
+        z-index: 3;
+    }
+}
+  
+@media (max-width: 1024px) {
+    .introTexts {
+      flex: 1 1 100%;
+    }
+    .introPhotos {
+      flex: 1 1 100%;
+    }
+    .introPhotos::after{
+        visibility: hidden;
+    }
+}
+
+@media (max-width:1058px){
+    .container{
+        width: 92%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    .introTexts h1{
+        font-size: calc(1.375rem + 1.5vw);
+        width: auto;
+    }
+
+    .introTexts p{
+        width: auto;
+    }
+    .introPhotos::after {
+        display: none;
+    }
+}
+
+
+/* animation */
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-100%); }
+    to { opacity: 1; transform: translateX(0); }
+}

@@ -1,0 +1,22 @@
+.shop{
+    background-color: #eff2f1;
+}
+
+.productsContainer{
+    width: 78%;
+    margin: 5rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.products{
+    margin: 1rem auto;
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    justify-items: center;
+}
