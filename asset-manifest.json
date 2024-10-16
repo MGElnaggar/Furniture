@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/Furniture/static/css/main.2d14a6ce.css",
+    "main.js": "/Furniture/static/js/main.154ffe09.js",
+    "static/js/453.0297a6b4.chunk.js": "/Furniture/static/js/453.0297a6b4.chunk.js",
+    "static/media/fa-solid-900.ttf": "/Furniture/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
+    "static/media/whyChooseUs.jpg": "/Furniture/static/media/whyChooseUs.afb2571022e4d5a42915.jpg",
+    "static/media/couch.png": "/Furniture/static/media/couch.9ad4df2c78d237b68544.png",
+    "static/media/sofa.png": "/Furniture/static/media/sofa.86e59c0fb4f5199c977e.png",
+    "static/media/fa-brands-400.ttf": "/Furniture/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
+    "static/media/fa-solid-900.woff2": "/Furniture/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/fa-brands-400.woff2": "/Furniture/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/fa-regular-400.ttf": "/Furniture/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/fa-regular-400.woff2": "/Furniture/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
+    "static/media/checked.png": "/Furniture/static/media/checked.6f298cca57a5a8b36055.png",
+    "static/media/fa-v4compatibility.ttf": "/Furniture/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
+    "static/media/fa-v4compatibility.woff2": "/Furniture/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
+    "static/media/dotsYellow.svg": "/Furniture/static/media/dotsYellow.bfc44818a1b6606dd7c1.svg",
+    "static/media/dotsLight.svg": "/Furniture/static/media/dotsLight.e00bbd6fd2e7780c28c9.svg",
+    "static/media/slick.svg": "/Furniture/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Furniture/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Furniture/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Furniture/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Furniture/index.html",
+    "static/media/support.svg": "/Furniture/static/media/support.9d26dea71aab9142a5629d38f2287c2e.svg",
+    "static/media/truck.svg": "/Furniture/static/media/truck.66e1c9ecc38ff585449d328dc23700fc.svg",
+    "static/media/mail.svg": "/Furniture/static/media/mail.a75c498de4e44335919e66cd96296e67.svg",
+    "static/media/return.svg": "/Furniture/static/media/return.d5d64cfebfacde8f05fd6c4bb3b51521.svg",
+    "static/media/bag.svg": "/Furniture/static/media/bag.32d7cc1dfb3dabdcef4ccc1966a6b994.svg",
+    "main.2d14a6ce.css.map": "/Furniture/static/css/main.2d14a6ce.css.map",
+    "main.154ffe09.js.map": "/Furniture/static/js/main.154ffe09.js.map",
+    "453.0297a6b4.chunk.js.map": "/Furniture/static/js/453.0297a6b4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d14a6ce.css",
+    "static/js/main.154ffe09.js"
+  ]
+}

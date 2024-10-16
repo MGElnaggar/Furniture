@@ -1,0 +1,74 @@
+[
+  {
+    "id": "0001",
+    "imgSrc": "/Assets/Chairs/nordicChair.png",
+    "title": "Nordic Chair",
+    "price": 29.99
+  },
+  {
+    "id": "0002",
+    "imgSrc": "/Assets/Chairs/kruzoChair.png",
+    "title": "Kruzo Chair",
+    "price": 19.99
+  },
+  {
+    "id": "0003",
+    "imgSrc": "/Assets/Chairs/ergonomicChair.png",
+    "title": "Ergonomic Chair",
+    "price": 39.99
+  },
+  {
+    "id": "0001",
+    "imgSrc": "/Assets/Chairs/nordicChair.png",
+    "title": "Nordic Chair",
+    "price": 29.99
+  },
+  {
+    "id": "0002",
+    "imgSrc": "/Assets/Chairs/kruzoChair.png",
+    "title": "Kruzo Chair",
+    "price": 19.99
+  },
+  {
+    "id": "0003",
+    "imgSrc": "/Assets/Chairs/ergonomicChair.png",
+    "title": "Ergonomic Chair",
+    "price": 39.99
+  },
+  {
+    "id": "0001",
+    "imgSrc": "/Assets/Chairs/nordicChair.png",
+    "title": "Nordic Chair",
+    "price": 29.99
+  },
+  {
+    "id": "0002",
+    "imgSrc": "/Assets/Chairs/kruzoChair.png",
+    "title": "Kruzo Chair",
+    "price": 19.99
+  },
+  {
+    "id": "0003",
+    "imgSrc": "/Assets/Chairs/ergonomicChair.png",
+    "title": "Ergonomic Chair",
+    "price": 39.99
+  },
+  {
+    "id": "0001",
+    "imgSrc": "/Assets/Chairs/nordicChair.png",
+    "title": "Nordic Chair",
+    "price": 29.99
+  },
+  {
+    "id": "0002",
+    "imgSrc": "/Assets/Chairs/kruzoChair.png",
+    "title": "Kruzo Chair",
+    "price": 19.99
+  },
+  {
+    "id": "0003",
+    "imgSrc": "/Assets/Chairs/ergonomicChair.png",
+    "title": "Ergonomic Chair",
+    "price": 39.99
+  }
+]  
