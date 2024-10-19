@@ -60,4 +60,4 @@ Once the order is successfully placed, users are directed to the **Order Submitt
 All cart and order data is temporarily stored in the browser's local storage. This allows users to navigate away from the site without losing their selections. However, when users click on the "Back to Home" button on the Order Submitted Page, all data stored in local storage is cleared. This ensures that the next time users visit, they will start with a fresh cart.
 
 
-## View Site : https://mgelnaggar.github.io/Furniture/
+### View Site : https://mgelnaggar.github.io/Furniture/
