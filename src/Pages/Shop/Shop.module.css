@@ -20,3 +20,15 @@
     grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
     justify-items: center;
 }
+
+@media (max-width:1275px) {
+    .products{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width:513px) {
+    .products{
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+}
