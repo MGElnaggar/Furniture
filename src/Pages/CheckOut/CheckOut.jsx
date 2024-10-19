@@ -125,24 +125,16 @@ const CheckOut = () => {
             phone,
         };
     
-        // Get the current stored data (if any)
         const storedInfo = JSON.parse(localStorage.getItem('orderInformation')) || [];
 
-        // Add the new personal information to the stored data
         storedInfo.push(personalInfo);
 
-        // Save it back to localStorage
         localStorage.setItem('orderInformation', JSON.stringify(storedInfo));
 
-        // Navigate to the next page
         navigate("/order-submitted");
 
-        console.log(storedInfo);
     };    
 
-    // const orderSubmittedBtn = () => {
-    //     navigate("/order-submitted"); 
-    // }
 
 
     return (
@@ -175,7 +167,6 @@ const CheckOut = () => {
                                     value={country}
                                     onChange={(e) => {
                                         setCountry(e.target.value);
-                                        console.log(e.target.value); // Debug to see if the correct value is captured
                                     }}
                                 >
                                     <option disabled value=""> -- select an option -- </option>
@@ -291,7 +282,7 @@ const CheckOut = () => {
                                         <th>Total</th>
                                     </tr>
                                 </thead>
-                                {/* <hr /> */}
+                                
                                 <tbody>
                                     {products.length > 0 ? (
                                         products.map((product, index) => (

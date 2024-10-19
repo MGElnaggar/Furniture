@@ -69,18 +69,32 @@ const Services = () => {
     const [testimonialsData, setTestimonialsData] = useState([]);
 
     useEffect(() => {
-        fetch('/JSONs/Chairs.json')
-            .then((response) => response.json())
-            .then((data) => setProducts(data))
-            .catch((error) => console.error('Error fetching the products:', error));
-    },[]);
+        const fetchProducts = async () => {
+            try {
+                const response = await fetch(`${process.env.PUBLIC_URL}/JSONs/Chairs.json`);
+                const data = await response.json();
+                setProducts(data);
+            } catch (error) {
+                console.error('Error fetching the products:', error);
+            }
+        };
+    
+        fetchProducts();
+    }, []);  
 
     useEffect(() => {
-        fetch('/JSONs/Testimonials.json')
-            .then((response) => response.json())
-            .then((data) => setTestimonialsData(data))
-            .catch((error) => console.error('Error fetching the testimonials:' , error));
-    },[]);
+        const fetchTestimonials = async () => {
+            try {
+                const response = await fetch(`${process.env.PUBLIC_URL}/JSONs/Testimonials.json`);
+                const data = await response.json();
+                setTestimonialsData(data);
+            } catch (error) {
+                console.error('Error fetching the testimonials:', error);
+            }
+        };
+    
+        fetchTestimonials();
+    }, []); 
 
     return (
         <div className={style.services}>

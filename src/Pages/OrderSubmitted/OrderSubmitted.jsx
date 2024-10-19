@@ -8,7 +8,7 @@ import style from './OrderSubmitted.module.css';
 const OrderSubmitted = () => {
     const [products, setProducts] = useState([]);
     const [price, setPrice] = useState([]);
-    const [orderData, setOrderData] = useState(null); // Changed to null initially
+    const [orderData, setOrderData] = useState(null);
     const [isVisible, setIsVisible] = useState(false);
 
     const navigate = useNavigate();
@@ -20,12 +20,9 @@ const OrderSubmitted = () => {
         const productsPrice = JSON.parse(localStorage.getItem('checkoutDetails')) || [];
         setPrice(productsPrice);
 
-        const storedOrderData = JSON.parse(localStorage.getItem('orderInformation')) || []; // Expecting an array
-        setOrderData(storedOrderData.length > 0 ? storedOrderData[0] : null); // Set to the first object or null
+        const storedOrderData = JSON.parse(localStorage.getItem('orderInformation')) || [];
+        setOrderData(storedOrderData.length > 0 ? storedOrderData[0] : null);
 
-        console.log("Retrieved Products: ", storedProducts);  // Debugging line
-        console.log("Retrieved Price: ", productsPrice);  // Debugging line
-        console.log("Retrieved Order Data: ", storedOrderData);  // Debugging line
     }, []);
 
     const showOrder = () => {
@@ -41,7 +38,6 @@ const OrderSubmitted = () => {
         console.log('Items cleared from localStorage');
     }
 
-    // Create an array of fields to display
     const orderFields = [
         { label: 'Country', value: orderData?.country },
         { label: 'First name', value: orderData?.firstName },
@@ -63,7 +59,7 @@ const OrderSubmitted = () => {
                 <p>Your order was successfully completed!</p>
 
                 <div className={`${style.dataContainer} ${isVisible ? style.visible : ''}`}>
-                    {/* Conditionally render order data */}
+
                     {orderData ? (
                         <div className={style.orderData}>
                             {orderFields.map((field, index) => (
@@ -73,10 +69,10 @@ const OrderSubmitted = () => {
                             ))}
                         </div>
                     ) : (
-                        <p>Loading order details...</p>  // Display while waiting for data
+                        <p>Loading order details...</p>
                     )}
 
-                    {/* Display Products */}
+                    
                     {products.length > 0 ? (
                         <div className={style.productList}>
                             <h2>Products Ordered</h2>
@@ -92,7 +88,7 @@ const OrderSubmitted = () => {
                         <p>No products found.</p>
                     )}
 
-                    {/* Display Price Details */}
+                    
                     {Object.keys(price).length > 0 ? (
                         <div className={style.priceDetails}>
                             <h2>Price Details</h2>

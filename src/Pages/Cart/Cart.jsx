@@ -87,7 +87,7 @@ const Cart = () => {
     // Handle coupon application
     const applyCoupon = () => {
         if (couponCode === "0100" && !couponApplied) {
-            setDiscount(30); // Apply $10 discount
+            setDiscount(30); // Apply 30% discount
             setCouponApplied(true); // Mark coupon as applied
             setError(""); // Clear any errors
 
@@ -144,7 +144,7 @@ const Cart = () => {
                     {/* Cart Items Table */}
                     {products.length === 0 ? (
                             <div className={style.noItem}>
-                                <h3>No items added to cart</h3> {/* Message displayed when no items are present */}
+                                <h3>No items added to cart</h3>
                             </div>
                         ) : (
                             <table className={style.cartTable}>
@@ -181,7 +181,7 @@ const Cart = () => {
 
                 <div className={style.cartSummary}>
                     <div className={style.cartCoupon}>
-                        {/* Continue Shopping */}
+                        
                         <button 
                             className={style.continueShopping}
                             onClick={continueShoppingBtn}
@@ -189,7 +189,7 @@ const Cart = () => {
                             Continue Shopping 
                         </button>
                         
-                        {/* Coupon */}
+                        
                         <div className={style.coupon}>
                             <label>Coupon</label>
                             <p>Enter your coupon code if you have one.</p>

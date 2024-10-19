@@ -21,32 +21,46 @@ const Home = () => {
     const [testimonialsData, setTestimonialsData] = useState([]);
 
     useEffect(() => {
-        fetch(`${process.env.PUBLIC_URL}/JSONs/Chairs.json`)
-            .then((response) => response.json())
-            .then((data) => setProducts(data))
-            .catch((error) => console.error('Error fetching the products:', error));
-    }, []);    
-
-    // useEffect(() => {
-    //     fetch('/JSONs/Posts.json')
-    //         .then((response) => response.json())
-    //         .then((data) => setPosts(data))
-    //         .catch((error) => console.error('Error fetching the posts:' , error));
-    // }, []);
-    useEffect(() => {
-        fetch(`${process.env.PUBLIC_URL}/JSONs/Posts.json`)
-            .then((response) => response.json())
-            .then((data) => setPosts(data))
-            .catch((error) => console.error('Error fetching the posts:', error));
-    }, []);
+        const fetchProducts = async () => {
+            try {
+                const response = await fetch(`${process.env.PUBLIC_URL}/JSONs/Chairs.json`);
+                const data = await response.json();
+                setProducts(data);
+            } catch (error) {
+                console.error('Error fetching the products:', error);
+            }
+        };
     
-
-    useEffect(() => {
-        fetch(`${process.env.PUBLIC_URL}/JSONs/Testimonials.json`)
-            .then((response) => response.json())
-            .then((data) => setTestimonialsData(data))
-            .catch((error) => console.error('Error fetching the testimonials:', error));
+        fetchProducts();
     }, []);    
+    
+    useEffect(() => {
+        const fetchPosts = async () => {
+            try {
+                const response = await fetch(`${process.env.PUBLIC_URL}/JSONs/Posts.json`);
+                const data = await response.json();
+                setPosts(data);
+            } catch (error) {
+                console.error('Error fetching the posts:', error);
+            }
+        };
+    
+        fetchPosts();
+    }, []);
+        
+    useEffect(() => {
+        const fetchTestimonials = async () => {
+            try {
+                const response = await fetch(`${process.env.PUBLIC_URL}/JSONs/Testimonials.json`);
+                const data = await response.json();
+                setTestimonialsData(data);
+            } catch (error) {
+                console.error('Error fetching the testimonials:', error);
+            }
+        };
+    
+        fetchTestimonials();
+    }, []);  
 
     return (
         <div>

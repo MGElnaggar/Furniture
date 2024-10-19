@@ -11,15 +11,15 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const contactDetails = [
     {
-      iconClass: 'fas fa-map-marker-alt', // Font Awesome class for location icon
+      iconClass: 'fas fa-map-marker-alt',
       text: '43 Raymouth Rd. \nBaltemoer, London 3910',
     },
     {
-      iconClass: 'fas fa-envelope', // Font Awesome class for email icon
+      iconClass: 'fas fa-envelope',
       text: 'info@yourdomain.com',
     },
     {
-      iconClass: 'fas fa-phone-alt', // Font Awesome class for phone icon
+      iconClass: 'fas fa-phone-alt',
       text: '+1 294 3925 3939',
     },
 ];

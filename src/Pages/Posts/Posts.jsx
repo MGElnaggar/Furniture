@@ -19,18 +19,32 @@ const Posts = () => {
 
 
     useEffect(() => {
-        fetch('/JSONs/Posts.json')
-            .then((response) => response.json())
-            .then((data) => setPosts(data))
-            .catch((error) => console.error('Error fetching the posts:' , error));
+        const fetchPosts = async () => {
+            try {
+                const response = await fetch(`${process.env.PUBLIC_URL}/JSONs/Posts.json`);
+                const data = await response.json();
+                setPosts(data);
+            } catch (error) {
+                console.error('Error fetching the posts:', error);
+            }
+        };
+    
+        fetchPosts();
     }, []);
 
     useEffect(() => {
-        fetch('/JSONs/Testimonials.json')
-            .then((response) => response.json())
-            .then((data) => setTestimonialsData(data))
-            .catch((error) => console.error('Error fetching the testimonials:' , error));
-    },[]);
+        const fetchTestimonials = async () => {
+            try {
+                const response = await fetch(`${process.env.PUBLIC_URL}/JSONs/Testimonials.json`);
+                const data = await response.json();
+                setTestimonialsData(data);
+            } catch (error) {
+                console.error('Error fetching the testimonials:', error);
+            }
+        };
+    
+        fetchTestimonials();
+    }, []); 
 
     return (
         <div className={style.posts}>

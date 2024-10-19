@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import style from './Items.module.css';
 
@@ -23,13 +23,7 @@ const Items = ({ id, imgSrc, name, price }) => {
         // Save the updated cart to localStorage
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
 
-        // alert(`${name} added to cart`);
-        console.log(cartItems);
     };
-
-    useEffect( () => {
-        localStorage.clear();
-    } , [])
 
     return (
         <div className={style.container}>

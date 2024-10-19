@@ -17,11 +17,18 @@ const Shop = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('/JSONs/Chairs.json')
-            .then((response) => response.json())
-            .then((data) => setProducts(data))
-            .catch((error) => console.error('Error fetching the products:', error));
-    },[]);
+        const fetchProducts = async () => {
+            try {
+                const response = await fetch(`${process.env.PUBLIC_URL}/JSONs/Chairs.json`);
+                const data = await response.json();
+                setProducts(data);
+            } catch (error) {
+                console.error('Error fetching the products:', error);
+            }
+        };
+    
+        fetchProducts();
+    }, []);  
 
 
     return (

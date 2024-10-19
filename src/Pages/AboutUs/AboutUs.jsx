@@ -18,11 +18,18 @@ const AboutUs = () => {
     const [testimonialsData, setTestimonialsData] = useState([]);
 
     useEffect(() => {
-        fetch('/JSONs/Testimonials.json')
-            .then((response) => response.json())
-            .then((data) => setTestimonialsData(data))
-            .catch((error) => console.error('Error fetching the testimonials:' , error));
-    },[]);
+        const fetchTestimonials = async () => {
+            try {
+                const response = await fetch(`${process.env.PUBLIC_URL}/JSONs/Testimonials.json`);
+                const data = await response.json();
+                setTestimonialsData(data);
+            } catch (error) {
+                console.error('Error fetching the testimonials:', error);
+            }
+        };
+    
+        fetchTestimonials();
+    }, []); 
 
     return (
         <div className={style.aboutUs}>
