@@ -52,6 +52,8 @@
 }
 
 .items button{
+    color: white;
+    font-size: 30px;
     width: 35px;
     height: 35px;
     background: #2f2f2f;
