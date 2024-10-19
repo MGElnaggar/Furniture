@@ -21,25 +21,32 @@ const Home = () => {
     const [testimonialsData, setTestimonialsData] = useState([]);
 
     useEffect(() => {
-        fetch('/JSONs/Chairs.json')
+        fetch(`${process.env.PUBLIC_URL}/JSONs/Chairs.json`)
             .then((response) => response.json())
             .then((data) => setProducts(data))
             .catch((error) => console.error('Error fetching the products:', error));
-    },[]);
+    }, []);    
 
+    // useEffect(() => {
+    //     fetch('/JSONs/Posts.json')
+    //         .then((response) => response.json())
+    //         .then((data) => setPosts(data))
+    //         .catch((error) => console.error('Error fetching the posts:' , error));
+    // }, []);
     useEffect(() => {
-        fetch('/JSONs/Posts.json')
+        fetch(`${process.env.PUBLIC_URL}/JSONs/Posts.json`)
             .then((response) => response.json())
             .then((data) => setPosts(data))
-            .catch((error) => console.error('Error fetching the posts:' , error));
+            .catch((error) => console.error('Error fetching the posts:', error));
     }, []);
+    
 
     useEffect(() => {
-        fetch('/JSONs/Testimonials.json')
+        fetch(`${process.env.PUBLIC_URL}/JSONs/Testimonials.json`)
             .then((response) => response.json())
             .then((data) => setTestimonialsData(data))
-            .catch((error) => console.error('Error fetching the testimonials:' , error));
-    },[]);
+            .catch((error) => console.error('Error fetching the testimonials:', error));
+    }, []);    
 
     return (
         <div>
@@ -66,6 +73,7 @@ const Home = () => {
                             {products.length > 0 ? (
                                 products.slice(0,3).map((product) => (
                                     <Items
+                                        key={product.id}
                                         id={product.id}
                                         imgSrc={product.imgSrc} 
                                         name={product.title} 

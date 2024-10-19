@@ -1,0 +1,30 @@
+[
+    {
+        "id" : "2001",
+        "description": " Separated they live in Bookmarks grove right at the coast of the Semantics, a large language ocean. ",
+        "name": "Lawson Arnold",
+        "position": "CEO, Founder, Atty.",
+        "image": "/Assets/Person/person_1.jpg"
+    },
+    {
+        "id" : "2002",
+        "description": " Separated they live in Bookmarks grove right at the coast of the Semantics, a large language ocean. ",
+        "name": "Jeremy Walker",
+        "position": "CEO, Founder, Atty.",
+        "image": "/Assets/Person/person_2.jpg"
+    },
+    {
+        "id" : "2003",
+        "description": " Separated they live in Bookmarks grove right at the coast of the Semantics, a large language ocean. ",
+        "name": "Patrik White",
+        "position": "CEO, Founder, Atty.",
+        "image": "/Assets/Person/person_3.jpg"
+    },
+    {
+        "id" : "2004",
+        "description": " Separated they live in Bookmarks grove right at the coast of the Semantics, a large language ocean. ",
+        "name": "Kathryn Ryan",
+        "position": "CEO, Founder, Atty.",
+        "image": "/Assets/Person/person_4.jpg"
+    }
+]

@@ -178,7 +178,7 @@ const CheckOut = () => {
                                         console.log(e.target.value); // Debug to see if the correct value is captured
                                     }}
                                 >
-                                    <option disabled selected value> -- select an option -- </option>
+                                    <option disabled value=""> -- select an option -- </option>
                                     <option value="egypt">Egypt</option>
                                     <option value="saudi arabia">Saudi Arabia</option>
                                     <option value="morocco">Morocco</option>

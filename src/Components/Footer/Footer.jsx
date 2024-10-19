@@ -39,7 +39,7 @@ const Footer = () => {
                             <input type="email" placeholder='Enter your email'/>
                             <button>
                                 {/* <img src={paperPlane} alt="paper plane" /> */}
-                                <span class="fa fa-paper-plane"></span>
+                                <span className="fa fa-paper-plane"></span>
                             </button>
                         </form>
                         {/* <form action=""></form> */}
@@ -60,10 +60,10 @@ const Footer = () => {
                             from stylish clothing to elegant furniture.
                         </p>
                         <ul>
-                            <li><a href="http://www.facebook.com"><span class="fa fa-brands fa-facebook-f"></span></a></li>
-                            <li><a href="https://x.com"><span class="fa fa-brands fa-twitter"></span></a></li>
-                            <li><a href="http://www.instagram.com"><span class="fa fa-brands fa-instagram"></span></a></li>
-                            <li><a href="http://www.linkedin.com"><span class="fa fa-brands fa-linkedin"></span></a></li>
+                            <li><a href="http://www.facebook.com"><span className="fa fa-brands fa-facebook-f"></span></a></li>
+                            <li><a href="https://x.com"><span className="fa fa-brands fa-twitter"></span></a></li>
+                            <li><a href="http://www.instagram.com"><span className="fa fa-brands fa-instagram"></span></a></li>
+                            <li><a href="http://www.linkedin.com"><span className="fa fa-brands fa-linkedin"></span></a></li>
                         </ul>
                     </div>
                     <div className={style.footerMidContentLinks}>

@@ -33,17 +33,17 @@ const Items = ({ id, imgSrc, name, price }) => {
 
     return (
         <div className={style.container}>
-            <a className={style.items}>
-                <img src={imgSrc} alt={name} />
+            <div className={style.items}>
+                <img src={`${process.env.PUBLIC_URL}/${imgSrc}`}  alt={name} />
                 <h3>{name}</h3>
                 <strong>{price}</strong>
                 <button onClick={handleAddToCart}>
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="9" y1="4.37114e-08" x2="9" y2="18" stroke="white" stroke-width="2"/>
-                        <line y1="9" x2="18" y2="9" stroke="white" stroke-width="2"/>
+                        <line x1="9" y1="4.37114e-08" x2="9" y2="18" stroke="white" strokeWidth="2"/>
+                        <line y1="9" x2="18" y2="9" stroke="white" strokeWidth="2"/>
                     </svg>
                 </button>
-            </a>
+            </div>
         </div>
     );
 };

@@ -35,7 +35,7 @@ const TestimonialsSlider = ({ testimonials }) => {
                             <p>"{testimonial.text}"</p>
                             <div className={styles.testimonialInfo}>
                                 <img
-                                    src={testimonial.image}
+                                    src={`${process.env.PUBLIC_URL}/${testimonial.image}`}
                                     alt={testimonial.name}
                                     className={styles.testimonialImage}
                                 />
