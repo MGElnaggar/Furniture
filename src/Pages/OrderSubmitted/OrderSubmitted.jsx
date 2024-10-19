@@ -30,12 +30,12 @@ const OrderSubmitted = () => {
         window.scrollTo(0, 0);
     };
 
-    const backToShopBtn = () => {
-        navigate("/");
-        localStorage.removeItem('cartItem');
+    const backToHomeBtn = () => {
+        localStorage.removeItem('cartItems');
         localStorage.removeItem('orderInformation');
         localStorage.removeItem('checkoutDetails');
         console.log('Items cleared from localStorage');
+        navigate("/");
     }
 
     const orderFields = [
@@ -104,7 +104,7 @@ const OrderSubmitted = () => {
                 <button onClick={showOrder}>
                     {isVisible ? "Hide my Order" : "Show my Order"}
                 </button>
-                <button onClick={backToShopBtn}>Back to Home</button>
+                <button onClick={backToHomeBtn}>Back to Home</button>
             </div>
 
             <Footer />

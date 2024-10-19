@@ -1,5 +1,7 @@
 import React , { useEffect, useState } from 'react';
 
+import { Link } from "react-router-dom";
+
 import Header from '../../Components/Header/Header';
 import PageIntro from '../../Components/PageIntro/PageIntro';
 import Items from '../../Components/Items/Items';
@@ -109,7 +111,7 @@ const Home = () => {
                     <div className={style.postsContainer}>
                         <div className={style.postsHeader}>
                             <h2>Recent Blogs</h2>
-                            <a href="/posts" target="_blank" rel="noopener noreferrer">View All Posts</a>
+                            <Link to="/posts" className={style.viewAllPosts}>View All Posts</Link>
                         </div>
                         <div className={style.homePostsBlogs}>
                             {posts.length > 0 ? (

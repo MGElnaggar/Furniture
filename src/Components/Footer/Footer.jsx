@@ -38,11 +38,9 @@ const Footer = () => {
                             <input type="text" placeholder='Enter you name'/>
                             <input type="email" placeholder='Enter your email'/>
                             <button>
-                                {/* <img src={paperPlane} alt="paper plane" /> */}
                                 <span className="fa fa-paper-plane"></span>
                             </button>
                         </form>
-                        {/* <form action=""></form> */}
 
                     </div>
 

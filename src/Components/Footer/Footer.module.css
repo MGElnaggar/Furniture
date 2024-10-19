@@ -53,7 +53,7 @@
 
 .subscribeAndImgInputsForm input{
     width: 200px;
-    height: 30px;
+    height: 45px;
     border-radius: 10px;
     font-family: "Inter", sans-serif;
     padding: .375rem .75rem;
@@ -76,11 +76,11 @@
     border: 1px solid transparent;
     height: 45px;
     width: 70px;
-    /* position: absolute;
-    bottom: 0; */
 }
 .subscribeAndImgInputsForm button span{
     color: white;
+    position: relative;
+    top: -4px;
 }
 
 .footerMidContent{

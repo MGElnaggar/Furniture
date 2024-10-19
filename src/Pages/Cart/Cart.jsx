@@ -61,7 +61,6 @@ const Cart = () => {
 
         setProducts(updatedProducts);
         localStorage.setItem('cartItems', JSON.stringify(updatedProducts)); // Update local storage
-        console.log(products);
     };
 
 
@@ -71,7 +70,6 @@ const Cart = () => {
 
         // Update local storage to reflect the changes
         localStorage.setItem('cartItems', JSON.stringify(updatedProducts));
-        console.log(products);
     };
 
     // Handle calculating the total for each product
@@ -119,7 +117,6 @@ const Cart = () => {
 
         // Save checkout details to local storage
         localStorage.setItem('checkoutDetails', JSON.stringify(checkoutData));
-        console.log(checkoutData);
 
         navigate("/checkout"); // Navigate to checkout page
     };
@@ -161,7 +158,7 @@ const Cart = () => {
                                 <tbody>
                                     {products.map((product) => (
                                         <tr key={product.id}>
-                                            <td><img src={product.imgSrc} alt={product.name} /></td>
+                                            <td><img src={`${process.env.PUBLIC_URL}/${product.imgSrc}`} alt={product.name} /></td>
                                             <td>{product.name}</td>
                                             <td>${product.price.toFixed(2)}</td>
                                             <td>

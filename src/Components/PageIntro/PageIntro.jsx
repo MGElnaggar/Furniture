@@ -1,10 +1,18 @@
 import React from 'react';
 
+import { useNavigate } from "react-router-dom";
 
 import couch from "../../Assets/Furniture/couch.png";
 import style from './PageIntro.module.css';
 
 const PageIntro = ({introHeader, introParagraph ,showButtons , showImage}) => {
+
+    const navigate = useNavigate();
+
+    const shopNowBtn = () => {
+        navigate("/shop");
+    }
+
     return (
         <div className={style.pageIntro}>
             <div className={style.intro}>
@@ -16,7 +24,7 @@ const PageIntro = ({introHeader, introParagraph ,showButtons , showImage}) => {
 
                         {showButtons && (
                             <div className={style.introTextsBtns}>
-                                <button>Shop Now</button>
+                                <button onClick={shopNowBtn}>Shop Now</button>
                                 <button>Explore</button>
                             </div>
                         )}

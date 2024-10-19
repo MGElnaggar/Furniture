@@ -14,7 +14,7 @@ import OrderSubmitted from "./Pages/OrderSubmitted/OrderSubmitted";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/Furniture">
         <Routes>
           <Route path="/" element={ <Home /> } />
           <Route path="/shop" element={ <Shop /> } />

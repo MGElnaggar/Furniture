@@ -7,7 +7,7 @@ const Blog = ({ imgSrc, a, author, date }) => {
         <div className={styles.blog}>
             <img src={`${process.env.PUBLIC_URL}/${imgSrc}`} alt={imgSrc} />
             <div className={styles.blogContent}>
-                <a href="/posts" target="_blank" rel="noopener noreferrer">{a}</a>
+                <h1>{a}</h1>
                 <p>by <strong>{author}</strong> on <strong>{date}</strong></p>
             </div>
         </div>
