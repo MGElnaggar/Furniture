@@ -16,7 +16,7 @@
 The **Home Page** serves as the landing page for users. It highlights featured products, provides reasons to choose our store, showcases customer testimonials, and presents snippets of blog posts related to home decor and furniture tips. Users can easily navigate to other sections of the site from here.
 
 ### Shop Page
-The **Shop Page** displays a comprehensive list of all available products. Users can view detailed information about each item, including images, descriptions, and prices. From this page, customers can add products directly to their cart for purchase.
+The **Shop Page** displays a comprehensive list of all available products. Users can view detailed information about each item, including images, descriptions, and prices. From this page, customers can add products directly to their cart for purchase by clicking on (+) button.
 
 ### About Us Page
 The **About Us Page** provides insights into our company's mission, values, and the team behind the brand. This section helps build trust with customers by sharing our story and commitment to quality service.
@@ -50,7 +50,7 @@ A final review of the order's details and total price is provided before submiss
 Once the order is successfully placed, users are directed to the **Order Submitted Page**. This page confirms the order submission and provides an option to view the order details. Users can toggle the visibility of their order information. 
 
 ### Flow of Ordering
-1. **Select Products**: Users click on + button in home page or browse the Shop Page and add items by clicking on + button to their cart.
+1. **Select Products**: Users click on (+) button in home page or browse the Shop Page and add items by clicking on (+) button to their cart.
 2. **View Cart**: Users can navigate to the Cart Page to review their selected items, adjust quantities, or remove items, including any applicable discounts (Discount code : 0100).
 3. **Proceed to Checkout**: Once satisfied with their cart, users click to proceed to the Checkout Page, where they enter their shipping information.
 4. **Final Review**: After entering all required information, users can review their order before clicking to place the order.
@@ -58,3 +58,6 @@ Once the order is successfully placed, users are directed to the **Order Submitt
 
 ### Local Storage Usage
 All cart and order data is temporarily stored in the browser's local storage. This allows users to navigate away from the site without losing their selections. However, when users click on the "Back to Home" button on the Order Submitted Page, all data stored in local storage is cleared. This ensures that the next time users visit, they will start with a fresh cart.
+
+
+## View Site : https://mgelnaggar.github.io/Furniture/
