@@ -142,7 +142,6 @@
 }
 
 .couponInput{
-    /* padding-top: 20px; */
     flex: 1;
     display: flex;
     justify-content: space-between;
