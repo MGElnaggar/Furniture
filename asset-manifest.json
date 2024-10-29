@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Furniture/static/css/main.4a107001.css",
-    "main.js": "/Furniture/static/js/main.079d0ae7.js",
+    "main.css": "/Furniture/static/css/main.f63ae228.css",
+    "main.js": "/Furniture/static/js/main.ee2b3bcd.js",
     "static/js/453.71570585.chunk.js": "/Furniture/static/js/453.71570585.chunk.js",
     "static/media/fa-solid-900.ttf": "/Furniture/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/whyChooseUs.jpg": "/Furniture/static/media/whyChooseUs.afb2571022e4d5a42915.jpg",
@@ -27,12 +27,12 @@
     "static/media/mail.svg": "/Furniture/static/media/mail.a75c498de4e44335919e66cd96296e67.svg",
     "static/media/return.svg": "/Furniture/static/media/return.d5d64cfebfacde8f05fd6c4bb3b51521.svg",
     "static/media/bag.svg": "/Furniture/static/media/bag.32d7cc1dfb3dabdcef4ccc1966a6b994.svg",
-    "main.4a107001.css.map": "/Furniture/static/css/main.4a107001.css.map",
-    "main.079d0ae7.js.map": "/Furniture/static/js/main.079d0ae7.js.map",
+    "main.f63ae228.css.map": "/Furniture/static/css/main.f63ae228.css.map",
+    "main.ee2b3bcd.js.map": "/Furniture/static/js/main.ee2b3bcd.js.map",
     "453.71570585.chunk.js.map": "/Furniture/static/js/453.71570585.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a107001.css",
-    "static/js/main.079d0ae7.js"
+    "static/css/main.f63ae228.css",
+    "static/js/main.ee2b3bcd.js"
   ]
 }
