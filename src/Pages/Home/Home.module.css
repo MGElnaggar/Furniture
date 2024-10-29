@@ -131,7 +131,9 @@
 }
 
 @media (max-width:513px) {
-    .homeProductsItems,
+    .homeProductsItems{
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
     .homePostsBlogs{
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     }

@@ -1,10 +1,32 @@
-import React from 'react';
+import React, {useState} from 'react';
+
+import Spinner from 'react-bootstrap/Spinner';
+
+import correctImage from '../../Assets/correct.png';
 
 import style from './Items.module.css';
 
 const Items = ({ id, imgSrc, name, price }) => {
 
+    const [isLoading, setIsLoading] = useState(false);
+    const [isAdded, setIsAdded] = useState(false);
+
     const handleAddToCart = () => {
+        
+        setIsLoading(true);
+
+        // Set timeout to revert back to the + symbol after 5 seconds
+        setTimeout(() => {
+            setIsLoading(false);
+            setIsAdded(true);
+
+            // Show the "item added" icon for 2 seconds
+            setTimeout(() => {
+                setIsAdded(false);
+            }, 2000);
+        }, 2000);
+
+
         // Get the current cart items from localStorage, or set it to an empty array if none exist
         const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
@@ -32,7 +54,19 @@ const Items = ({ id, imgSrc, name, price }) => {
                 <h3>{name}</h3>
                 <strong>{price}</strong>
                 <button onClick={handleAddToCart}>
-                    +
+                    {isLoading ? (
+                        <Spinner
+                            animation="border"
+                            role="status"
+                            size="sm" // Try "lg" or "md" if "sm" is too small
+                            style={{ width: '20px', height: '20px', margin: 'auto', color: 'white' }}
+                        />
+                    ) : isAdded ? (
+                        <img className={style.correctImage} src={correctImage} alt="Added to Cart"/>
+                    ) : (
+                        '+'
+                        // <img className={style.correctImage} src={correctImage} alt="Added to Cart"/>
+                    )}
                 </button>
             </div>
         </div>

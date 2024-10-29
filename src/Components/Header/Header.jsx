@@ -40,7 +40,7 @@ const Header = () => {
         <div className={style.header}>
             <div className={style.nav}>
                 <div className={style.logo}>
-                    <a href="/">Furniture</a>
+                    <Link to="/">Furniture</Link>
                 </div>
 
                 {!isMobile && (

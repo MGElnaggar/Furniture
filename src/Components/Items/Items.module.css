@@ -13,17 +13,13 @@
     margin: 3rem auto;
 }
 
-.items img{
+.items img {
     width: 100%;
     padding-bottom: 30px;
     transition: all 0.3s ease; 
 }
 
-.container:hover img{
-    transform: translateY(-2rem);
-}
-
-.items h3{
+.items h3 {
     color: #2f2f2f;
     font-weight: 600;
     font-size: 16px;
@@ -35,7 +31,7 @@
     top: 0;
 }
 
-.items strong{
+.items strong {
     display: block;
     color: #2f2f2f;
     font-weight: 800;
@@ -46,12 +42,7 @@
     top: 0;
 }
 
-.container:hover .items h3,
-.container:hover .items strong{
-    top: -2rem;
-}
-
-.items button{
+.items button {
     color: white;
     font-size: 30px;
     width: 35px;
@@ -71,12 +62,6 @@
     transition: all 0.3s ease;
 }
 
-.container:hover button{
-    opacity: 1;
-    visibility: visible;
-    bottom: -2rem;
-}
-
 .items::before {
     content: "";
     position: absolute;
@@ -91,6 +76,71 @@
     box-sizing: border-box;
 }
 
-.container:hover .items::before {
-    height: 80%;
+.correctImage{
+    width: 70px !important;
+    height: 37px;
+    z-index: 5;
+    position: relative;
+    top: 32px;
+    padding-bottom: 0px !important;
+}
+
+/* .loader {
+    animation-name: spin;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+} */
+
+
+@media (min-width: 601px) {
+    .container:hover img {
+        transform: translateY(-2rem);
+    }
+
+    .container:hover .items h3,
+    .container:hover .items strong {
+        top: -2rem;
+    }
+
+    .container:hover button {
+        opacity: 1;
+        visibility: visible;
+        bottom: -2rem;
+    }
+
+    .container:hover .items::before {
+        height: 80%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .items img {
+        transform: translateY(-2rem);
+    }
+
+    .items h3,
+    .items strong {
+        top: -2rem;
+    }
+
+    .items button {
+        opacity: 1;
+        visibility: visible;
+        bottom: -2rem;
+    }
+
+    .items::before {
+        height: 80%;
+    }
 }
