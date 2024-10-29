@@ -15,34 +15,34 @@ const Items = ({ id, imgSrc, name, price }) => {
         
         setIsLoading(true);
 
-        // Set timeout to revert back to the + symbol after 5 seconds
+   
         setTimeout(() => {
             setIsLoading(false);
             setIsAdded(true);
 
-            // Show the "item added" icon for 2 seconds
+           
             setTimeout(() => {
                 setIsAdded(false);
             }, 2000);
         }, 2000);
 
 
-        // Get the current cart items from localStorage, or set it to an empty array if none exist
+      
         const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
-        // Check if the item already exists in the cart by checking its id
+       
         const existingItemIndex = cartItems.findIndex((item) => item.id === id);
 
         if (existingItemIndex !== -1) {
-            // If item exists, increment its quantity
+  
             cartItems[existingItemIndex].quantity += 1;
         } else {
-            // If item doesn't exist, add it to the cart with a quantity of 1
+   
             const newItem = { id, imgSrc, name, price, quantity: 1 };
             cartItems.push(newItem);
         }
 
-        // Save the updated cart to localStorage
+
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
 
     };
@@ -58,14 +58,13 @@ const Items = ({ id, imgSrc, name, price }) => {
                         <Spinner
                             animation="border"
                             role="status"
-                            size="sm" // Try "lg" or "md" if "sm" is too small
+                            size="sm" 
                             style={{ width: '20px', height: '20px', margin: 'auto', color: 'white' }}
                         />
                     ) : isAdded ? (
                         <img className={style.correctImage} src={correctImage} alt="Added to Cart"/>
                     ) : (
                         '+'
-                        // <img className={style.correctImage} src={correctImage} alt="Added to Cart"/>
                     )}
                 </button>
             </div>
