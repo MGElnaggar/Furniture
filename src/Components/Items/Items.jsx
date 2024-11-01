@@ -55,17 +55,8 @@ const Items = ({ id, imgSrc, name, price }) => {
                 <strong>{price}</strong>
                 <button onClick={handleAddToCart}>
                     {isLoading ? (
-                        <Spinner
-                        animation="border"
-                        role="status"
-                        size="sm"
-                        style={{
-                            width: '20px',
-                            height: '20px',
-                            color: 'white',
-                            borderWidth: '2px' // Ensures visibility
-                        }}
-                        />                    
+                        <Spinner animation="border" size="sm" />
+                                     
                     ) : isAdded ? (
                         <img className={style.correctImage} src={correctImage} alt="Added to Cart"/>
                     ) : (
