@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 
+import Spinner from 'react-bootstrap/Spinner';
+
 import correctImage from '../../Assets/correct.png';
 
 import style from './Items.module.css';
@@ -53,12 +55,29 @@ const Items = ({ id, imgSrc, name, price }) => {
                 <strong>{price}</strong>
                 <button onClick={handleAddToCart}>
                     {isLoading ? (
-                        <div className={style.customSpinner}></div>
+                        <Spinner
+                        animation="border"
+                        role="status"
+                        size="sm"
+                        style={{
+                            width: '20px',
+                            height: '20px',
+                            color: 'white',
+                            borderWidth: '2px' // Ensures visibility
+                        }}
+                        />                    
                     ) : isAdded ? (
                         <img className={style.correctImage} src={correctImage} alt="Added to Cart"/>
                     ) : (
                         '+'
                     )}
+                    {/* {isLoading ? (
+    <div className={style.customSpinner}></div>
+) : isAdded ? (
+    <img className={style.correctImage} src={correctImage} alt="Added to Cart"/>
+) : (
+    '+'
+)} */}
                 </button>
             </div>
         </div>
