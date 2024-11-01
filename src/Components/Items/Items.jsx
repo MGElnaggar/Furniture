@@ -62,13 +62,7 @@ const Items = ({ id, imgSrc, name, price }) => {
                     ) : (
                         '+'
                     )}
-                    {/* {isLoading ? (
-    <div className={style.customSpinner}></div>
-) : isAdded ? (
-    <img className={style.correctImage} src={correctImage} alt="Added to Cart"/>
-) : (
-    '+'
-)} */}
+                
                 </button>
             </div>
         </div>
